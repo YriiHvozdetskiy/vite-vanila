@@ -1,14 +1,7 @@
+// ==== styles ====
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import "./src/styles/style.css";
-import "./src/styles/scss/main.scss";
+import "@/styles/style.css";
+import "@/styles/scss/main.scss";
+// ==== js ====
+import '@/js/test.js'
 
-import $ from "jquery";
-import {Fancybox} from "@fancyapps/ui";
-
-$(document).ready(function () {
-   $("#app").html("Hello World");
-});
-
-Fancybox.bind("[data-fancybox]", {
-   // Your custom options
-});
