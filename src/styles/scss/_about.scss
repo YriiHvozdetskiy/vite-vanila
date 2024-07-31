@@ -1,4 +1,10 @@
-h1 {
-   color: #535bf2;
-   font-size: 23px;
+.about {
+   h1 {
+      color: blueviolet;
+      font-size: 23px;
+
+      &:hover {
+         color: red;
+      }
+   }
 }

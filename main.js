@@ -1,7 +1,20 @@
-// ==== styles ====
+// Стилі
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import "@/styles/style.css";
 import "@/styles/scss/main.scss";
-// ==== js ====
-import '@/js/test.js'
 
+// JavaScript
+import $ from 'jquery';
+import {Fancybox} from '@fancyapps/ui';
+
+import '@/js/test.js';
+import '@/js/app.js';
+
+$(document).ready(function () {
+   $("#app").append("<p>Цей текст доданий за допомогою jQuery</p>");
+});
+
+Fancybox.bind("[data-fancybox]", {
+   // Ваші користувацькі опції
+});
+
+console.log('Main script loaded');
